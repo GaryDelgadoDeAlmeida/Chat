@@ -1,0 +1,32 @@
+/* ------------------------------------------------------ *\
+                        Login
+\* ------------------------------------------------------ */
+.login {
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+// .login-wrapper {
+//     max-width: 1200px;
+//     width: 100%;
+// }
+
+.login-block {
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #aaa;
+    background-color: azure;
+    border-radius: 25px;
+    box-shadow: 3px 4px 2px;
+    width: 350px;
+}
+
+.login-title {
+    margin: 0 0 15px 0;
+    font-size: 25px;
+}
+
+.login-form {
+    display: grid;
+}

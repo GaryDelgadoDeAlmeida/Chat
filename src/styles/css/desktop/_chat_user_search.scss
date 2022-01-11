@@ -1,0 +1,30 @@
+/* ------------------------------------------------------ *\
+                  User section search
+\* ------------------------------------------------------ */
+.users-search {
+    width: 100%;
+    background-color: var(--c-whiteMetal);
+  }
+  .users-search .search-form {
+    padding: 10px;
+    display: flex;
+  }
+  
+  .users-search .search-form > button {
+    background-color: transparent;
+    border: none;
+    color: var(--c-white);
+    padding: 0 10px;
+    position: absolute;
+    height: 30px;
+  }
+  
+  .users-search .search-form > input {
+    width: 100%;
+    padding: 0 0 0 35px;
+    border: none;
+    height: 30px;
+    background-color: var(--chatUsersWidth);
+    color: var(--c-white);
+    outline: none;
+  }
