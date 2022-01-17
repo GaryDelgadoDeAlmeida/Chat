@@ -2,17 +2,12 @@ export default function LoginForm() {
 
     return (
         <section class="login">
-            <div class="login-wrapper">
-                <div class="login-block">
-                    <h2 class="login-title">Login</h2>
-                    
-                    <form class="login-form">
-                        <input type="text" name="username" placeholder="Username" />
-                        <input type="password" name="password" placeholder="Password" />
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
+            <form class="login-form" action="index.html" method="POST">
+                <h1>Login</h1>
+                <input type="text" name="username" placeholder="Username" autocomplete="off" required/>
+                <input type="password" name="password" placeholder="Password" autocomplete="off" required/>
+                <input type="submit" value="Login"/>
+            </form>
         </section>
     )
 }
