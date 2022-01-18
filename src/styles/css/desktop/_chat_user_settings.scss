@@ -11,16 +11,31 @@
     position: absolute;
     color: var(--c-white);
     border-top: 1px solid var(--c-whiteMetal);
-  }
-  
-  .user-settings a {
+    display: inline-flex;
+}
+
+.user-settings a:first-child {
+    border-right: 1px solid var(--c-whiteMetal);
+}
+
+.user-settings a {
     color: var(--c-white);
     position: relative;
     vertical-align: top;
     line-height: 50px;
     padding: 0 10px;
-  }
+    width: calc(100% / 2);
+}
 
-  .user-settings a > img {
+.user-settings a > img {
     width: 25px;
-  }
+}
+
+.user-settings a > span {
+    margin-left: 5px;
+}
+
+.user-settings a > img,
+.user-settings a > span {
+    vertical-align: middle;
+}

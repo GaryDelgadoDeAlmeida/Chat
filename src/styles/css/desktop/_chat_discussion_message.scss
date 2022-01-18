@@ -3,9 +3,9 @@
 \* ------------------------------------------------------ */
 .discussion-panel {
     position: absolute;
-    width: fill-available;
-    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: 100%;
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
     padding: 10px 15px;
     height: calc(100% - 140px);
   }
