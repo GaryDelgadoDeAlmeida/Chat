@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/css/common.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import LoginScreen from './screens/LoginScreen';
+import './styles/css/common.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LoginScreen />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

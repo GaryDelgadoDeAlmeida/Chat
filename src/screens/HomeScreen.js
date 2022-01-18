@@ -1,15 +1,23 @@
+import React from 'react';
 import Discussion from '../components/Discussion';
 import SideHeader from '../components/SideHeader';
 import '../styles/css/home.css';
 
-export default function HomeScreen() {
-    return (
-        <section class="chat">
-            {/* Users */}
-            <SideHeader />
-
-            {/* Discussion */}
-            <Discussion />
-        </section>
-    );
+export default class HomeScreen extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {}
+    }
+    
+    render() {
+        return (
+            <section class="chat">
+                {/* Users */}
+                <SideHeader />
+    
+                {/* Discussion */}
+                <Discussion />
+            </section>
+        )
+    };
 }

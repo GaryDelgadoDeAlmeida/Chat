@@ -1,9 +1,17 @@
+import React from "react";
 import LoginForm from "../components/forms/LoginForm";
 import "../styles/css/desktop/_login.scss";
 
-export default function LoginScreen() {
+export default class LoginScreen extends React.Component {
 
-    return (
-        <LoginForm />
-    );
+    constructor(props){
+        super(props);
+        this.state = {}
+    }
+
+    render() {
+        return (
+            <LoginForm />
+        )
+    };
 }
