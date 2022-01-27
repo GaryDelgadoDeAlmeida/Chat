@@ -6,41 +6,42 @@
     height: 70px;
     background-color: var(--c-white);
     display: flex;
-}
-.discussion-user {
-    display: flex;
-    padding: 5px;
-    margin: 0 10px;
-    width: 100%;
-}
 
-.discussion-user .discussion-img {
-    max-width: 70px;
-}
-
-.discussion-user .discussion-img img {
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
-    height: 50px;
-    width: 50px;
-    border: 3px solid cadetblue;
-}
-
-.discussion-user .discussion-username {
-    display: grid;
-    text-align: left;
-    margin: auto auto auto 0;
-    padding: 0 10px;
+    .discussion-user {
+        display: flex;
+        padding: 5px;
+        margin: 0 10px;
+        width: 100%;
+    
+        .discussion-img {
+            max-width: 70px;
+    
+            img {
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: top;
+                height: 50px;
+                width: 50px;
+                border: 3px solid cadetblue;
+            }
+        }
+    
+        .discussion-username {
+            display: grid;
+            text-align: left;
+            margin: auto auto auto 0;
+            padding: 0 10px;
+        }
     }
-
-.discussion-action {
-    display: flex;
-    font-size: 1.5rem;
-    margin: auto;
-}
-
-.discussion-action a {
-    margin: 0 10px;
-    width: 25px;
+    
+    .discussion-action {
+        display: flex;
+        font-size: 1.5rem;
+        margin: auto;
+    
+        a {
+            margin: 0 10px;
+            width: 25px;
+        }
+    }
 }

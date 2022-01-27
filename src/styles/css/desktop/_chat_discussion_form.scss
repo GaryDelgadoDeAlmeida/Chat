@@ -1,39 +1,42 @@
 /* ------------------------------------------------------ *\
           Discussion - Send Message section
 \* ------------------------------------------------------ */
-.chat-discussion .discussion-bar {
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    width: -moz-available;          /* WebKit-based browsers will ignore this. */
-}
+.chat-discussion{
 
-.chat-discussion .discussion-bar form {
-    width: 100%;
-    display: flex;
-}
+    .discussion-bar {
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
 
-.chat-discussion .discussion-bar input {
-    padding: 0 15px;
-    width: 100%;
-    height: 50px;
-    border: 1px solid var(--c-lightSilver);
-    outline: none;
-    letter-spacing: 1px;
-}
+        form {
+            width: 100%;
+            display: flex;
+        }
+        
+        input {
+            padding: 0 15px;
+            width: 100%;
+            height: 50px;
+            border: 1px solid var(--c-lightSilver);
+            outline: none;
+            letter-spacing: 1px;
+        }
+        
+        button {
+            color: var(--c-white);
+            background-color: var(--c-darkShadeCyanBlue);
+            border: 1px solid var(--c-darkShadeCyanBlue);
+            vertical-align: middle;
+            height: 50px;
+            width: 50px;
+            margin: auto;
 
-.chat-discussion .discussion-bar button {
-    color: var(--c-white);
-    background-color: var(--c-darkShadeCyanBlue);
-    border: 1px solid var(--c-darkShadeCyanBlue);
-    vertical-align: middle;
-    height: 50px;
-    width: 50px;
-    margin: auto;
-}
-
-.chat-discussion .discussion-bar button img {
-    width: 25px;
+            img {
+                width: 25px;
+            }
+        }
+    }
 }

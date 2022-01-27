@@ -11,7 +11,7 @@ export default class UserDisucssion extends React.Component {
             <div class="users-list">
                 <div class="user-block">
                     <div class="user-img">
-                        <img class="img-rounded" src="content/img/avatar.png" alt="" />
+                        <img class="img-rounded" src={"/content/img/avatar.png"} alt="" />
                     </div>
                     <div class="user-descr">
                         <span class="user-name">Robert Johnson</span>
@@ -21,7 +21,7 @@ export default class UserDisucssion extends React.Component {
 
                 <div class="user-block">
                     <div class="user-img">
-                        <img class="img-rounded" src="content/img/avatar.png" alt="" />
+                        <img class="img-rounded" src={"/content/img/avatar.png"} alt="" />
                     </div>
                     <div class="user-descr">
                         <span class="user-name">Robert Johnson</span>
@@ -31,7 +31,7 @@ export default class UserDisucssion extends React.Component {
 
                 <div class="user-block">
                     <div class="user-img">
-                        <img class="img-rounded" src="content/img/avatar.png" alt="" />
+                        <img class="img-rounded" src={"/content/img/avatar.png"} alt="" />
                     </div>
                     <div class="user-descr">
                         <span class="user-name">Robert Johnson</span>
@@ -41,7 +41,7 @@ export default class UserDisucssion extends React.Component {
 
                 <div class="user-block">
                     <div class="user-img">
-                        <img class="img-rounded" src="content/img/avatar.png" alt="" />
+                        <img class="img-rounded" src={"/content/img/avatar.png"} alt="" />
                     </div>
                     <div class="user-descr">
                         <span class="user-name">Robert Johnson</span>
@@ -51,7 +51,7 @@ export default class UserDisucssion extends React.Component {
 
                 <div class="user-block">
                     <div class="user-img">
-                        <img class="img-rounded" src="content/img/avatar.png" alt="" />
+                        <img class="img-rounded" src={"/content/img/avatar.png"} alt="" />
                     </div>
                     <div class="user-descr">
                         <span class="user-name">Robert Johnson</span>
@@ -61,7 +61,7 @@ export default class UserDisucssion extends React.Component {
 
                 <div class="user-block">
                     <div class="user-img">
-                        <img class="img-rounded" src="content/img/avatar.png" alt="avatar" />
+                        <img class="img-rounded" src={"/content/img/avatar.png"} alt="avatar" />
                     </div>
                     <div class="user-descr">
                         <span class="user-name">Robert Johnson</span>

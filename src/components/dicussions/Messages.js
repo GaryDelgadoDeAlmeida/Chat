@@ -38,19 +38,19 @@ export default class Messages extends React.Component {
                         <span>Thanks</span>
                     </div>
                     <div class="discussion ordered">
-                        <img src="./content/img/avatar.png" alt="" />
+                        <img src={"/content/img/avatar.png"} alt="" />
                     </div>
                     <div class="discussion inverted">
-                        <img src="./content/img/avatar.png" alt="" />
+                        <img src={"/content/img/avatar.png"} alt="" />
                     </div>
                     <div class="discussion inverted">
-                        <img src="./content/img/avatar.png" alt="" />
+                        <img src={"/content/img/avatar.png"} alt="" />
                     </div>
                     <div class="discussion inverted">
-                        <img src="./content/img/avatar.png" alt="" />
+                        <img src={"/content/img/avatar.png"} alt="" />
                     </div>
                     <div class="discussion inverted">
-                        <img src="./content/img/avatar.png" alt="" />
+                        <img src={"/content/img/avatar.png"} alt="" />
                     </div>
                 </div>
             </div>

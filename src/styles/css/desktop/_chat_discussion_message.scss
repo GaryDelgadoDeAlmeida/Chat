@@ -23,29 +23,25 @@
   }
   
   .discussion-block .discussion.ordered {
+    margin: 5px auto 5px 0;
+    padding: 5px 15px;
+    width: max-content;
     max-width: fit-content;
+    border-radius: 0 25px 25px;
     border: 1px solid var(--c-mediumDarkShadeCyanBlue);
     background-color: var(--c-mediumDarkShadeCyanBlue);
     color: var(--c-white);
-    border-radius: 0 25px 25px;
-    margin: 5px 0;
-    padding: 0 15px;
-    width: max-content;
-    margin-left: 0;
-    margin-right: auto;
   }
   
   .discussion-block .discussion.inverted {
+    margin: 5px 0 5px auto;
+    padding: 5px 15px;
+    width: max-content;
     max-width: fit-content;
+    border-radius: 25px 25px 0;
     border: 1px solid var(--c-cyanBlue);
     background-color: var(--c-cyanBlue);
     color: var(--c-white);
-    border-radius: 25px 25px 0;
-    margin: 5px 0;
-    padding: 0 15px;
-    width: max-content;
-    margin-left: auto;
-    margin-right: 0;
   }
   
   .discussion-block .discussion.ordered img,

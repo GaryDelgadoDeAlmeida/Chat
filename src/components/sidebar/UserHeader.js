@@ -10,7 +10,7 @@ export default class UserHeader extends React.Component {
         return (
             <div class="user-profile">
                 <div class="profile-img">
-                    <img src="content/img/avatar.png" alt="Garry Almeida" />
+                    <img src={"/content/img/avatar.png"} alt="Garry Almeida" />
                 </div>
                 <div class="profile-username">
                     <span>Garry Almeida</span>
