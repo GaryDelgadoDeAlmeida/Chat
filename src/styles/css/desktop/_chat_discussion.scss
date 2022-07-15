@@ -1,9 +1,0 @@
-/* ------------------------------------------------------ *\
-                  Discussion section
-\* ------------------------------------------------------ */
-.chat-discussion {
-    width: calc(100% - var(--chatUsersWidth));
-    background-color: var(--c-verySlightCyan);
-    border: 1px solid var(--c-black);
-    position: relative;
-}

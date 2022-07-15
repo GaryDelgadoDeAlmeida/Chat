@@ -1,18 +1,14 @@
 import React from "react";
-import SearchForm from "./forms/SearchForm";
+import SearchForm from "./../forms/SearchForm";
 import UserHeader from './sidebar/UserHeader';
 import UserDiscussion from './sidebar/UserDiscussion';
 import UserFooter from './sidebar/UserFooter';
 
 export default class SideHeader extends React.Component {
 
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
-            <div class="chat-users">
+            <div className={"chat-users"}>
     
                 {/* Current user profile */}
                 <UserHeader props={this.props} />

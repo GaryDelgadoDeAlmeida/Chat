@@ -1,11 +1,19 @@
-export default function SearchForm() {
+import React from "react";
 
-    return (
-        <div class="users-search">
-            <div class="search-form">
-                <button><img src={"/content/svg/search.svg"} alt="" /></button>
-                <input type="text" name="searchUser" placeholder="Search a person" />
+export default class SearchForm extends React.Component {
+
+    handleChange(event) {
+        console.log("Hello handleChange")
+    }
+
+    render() {
+        return (
+            <div className={"users-search"}>
+                <div className={"search-form"}>
+                    <button><img src={"/content/svg/search.svg"} alt="" /></button>
+                    <input type="text" name="searchUser" placeholder="Search a person" onChange={(e) => this.handleChange(e)} />
+                </div>
             </div>
-        </div>
-    );
+        )
+    }
 }

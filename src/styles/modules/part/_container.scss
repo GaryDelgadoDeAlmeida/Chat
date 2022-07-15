@@ -1,0 +1,19 @@
+/* ---------------------------------------- *\
+                Container
+\* ---------------------------------------- */
+.page-content {
+    width: 100%;
+    height: 100vh;
+
+    .wrapper {
+        max-width: 1250px;
+        margin: auto;
+        width: calc(100% - 60px);
+    }
+
+    .flex-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+}

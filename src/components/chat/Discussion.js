@@ -1,16 +1,13 @@
 import React from 'react';
 import Header from './dicussions/Header';
 import Messages from './dicussions/Messages';
-import SendMessageForm from "./forms/SendMessageForm";
+import SendMessageForm from "./../forms/SendMessageForm";
 
 export default class Discussion extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
+    
     render() {
         return (
-            <div class="chat-discussion">
+            <div className={"chat-discussion"}>
                 
                 {/* Conversed used */}
                 <Header props={this.props} />

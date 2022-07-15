@@ -1,4 +1,5 @@
 import React from "react";
+import Sidebar from "../../components/Sidebar";
 
 export default class UserProfileScreen extends React.Component {
 
@@ -9,9 +10,11 @@ export default class UserProfileScreen extends React.Component {
 
     render() {
         return (
-            <div>
-                <p>Profile screen page</p>
-            </div>
+            <Sidebar>
+                <div>
+                    <p>Profile screen page</p>
+                </div>
+            </Sidebar>
         )
     }
 }

@@ -1,15 +1,11 @@
 import React from "react";
-import {
-    BrowserRouter, 
-    Routes, 
-    Route, 
-    // Navigate 
-} from "react-router-dom";
-import HomeScreen from './screens/HomeScreen';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import HomeScreen from './screens/Chat/HomeScreen';
+import UserProfileScreen from "./screens/Settings/UserProfileScreen";
 import LoginScreen from './screens/LoginScreen';
 import NotFoundScreen from './screens/NotFoundScreen';
 import RegisterScreen from "./screens/RegisterScreen";
-import UserProfileScreen from "./screens/UserProfileScreen";
+import FriendsScreen from "./screens/Contact/FriendsScreen";
 
 export default class App extends React.Component {
 
@@ -22,20 +18,19 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <div className="App">
-                <BrowserRouter>
-                    <Routes>
-                        {/* <Route path="/home" element={ this.state.isAuthentified === true ? <HomeScreen /> : <Navigate to="/" /> } /> */}
-                        <Route path="/home" element={<HomeScreen />} />
-                        <Route path="/home/:id" element={<HomeScreen />} />
-                        <Route path="/profile" element={<UserProfileScreen />} />
-                        <Route path="/register" element={<RegisterScreen />} />
-                        <Route path="/logout" element="" />
-                        <Route path="/" element={<LoginScreen />} />
-                        <Route path="*" element={<NotFoundScreen />} />
-                    </Routes>
-                </BrowserRouter>
-            </div>
+            <BrowserRouter>
+                <Routes>
+                    {/* <Route path="/home" element={ this.state.isAuthentified === true ? <HomeScreen /> : <Navigate to="/" /> } /> */}
+                    <Route path="/chat" element={<HomeScreen />} />
+                    <Route path="/chat/:id" element={<HomeScreen />} />
+                    <Route path="/profile" element={<UserProfileScreen />} />
+                    <Route path="/contact" element={<FriendsScreen />} />
+                    <Route path="/register" element={<RegisterScreen />} />
+                    <Route path="/logout" element={<LoginScreen />} />
+                    <Route path="/" element={<LoginScreen />} />
+                    <Route path="*" element={<NotFoundScreen />} />
+                </Routes>
+            </BrowserRouter>
         )
     };
 }

@@ -1,21 +1,18 @@
 /* ------------------------------------------------------ *\
-          Discussion - Send Message section
+    Send Message section
 \* ------------------------------------------------------ */
-.chat-discussion{
+.send-message {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
 
-    .discussion-bar {
-        position: absolute;
-        bottom: 0;
-        height: 50px;
+    form {
         width: 100%;
-        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        display: flex;
 
-        form {
-            width: 100%;
-            display: flex;
-        }
-        
         input {
             padding: 0 15px;
             width: 100%;
