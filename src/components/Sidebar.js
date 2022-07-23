@@ -8,7 +8,7 @@ export default class Sidebar extends React.Component {
             <div className={"page-content"}>
                 <div className={"flex-wrapper"}>
                     <header className={"sidebar"}>
-                        <nav className={""}>
+                        <nav>
                             <ul>
                                 <li>
                                     <Link to={"/chat"} title={"Chat"}>
@@ -16,7 +16,7 @@ export default class Sidebar extends React.Component {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to={"/contact"} title={"Contact"}>
+                                    <Link to={"/friends"} title={"Friends"}>
                                         <img src={"/content/svg/friends.svg"} alt={"friends"} />
                                     </Link>
                                 </li>

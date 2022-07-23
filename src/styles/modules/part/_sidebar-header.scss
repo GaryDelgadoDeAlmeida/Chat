@@ -1,0 +1,64 @@
+.sidebar-header {
+    position: relative;
+    width: var(--chatUsersWidth);
+    background-color: var(--c-darkShadeCyanBlue);
+
+    .card-list {
+        margin: 0;
+        width: 100%;
+        height: calc(100% - 240px);
+        overflow: auto;
+        text-align: center;
+        scrollbar-width: none;          /* Hide scrollbar for Firefox */
+        -ms-overflow-style: none;       /* Hide scrollbar for IE and Edge */
+    
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            margin: 0;
+            padding: 15px;
+            display: flex;
+            cursor: pointer;
+            color: var(--c-white);
+        
+            &:hover {
+                color: var(--c-white);
+                background-color: var(--c-smallMediumDarkShadeCyanBlue);
+            }
+
+            &.current-discussion {
+                border-right: 5px solid var(--c-silver);
+                background-color: var(--c-smallMediumDarkShadeCyanBlue);
+            }
+
+            .card-img {
+                height: auto;
+                max-width: 60px;
+        
+                img {
+                    width: 100%;
+                    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+                    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+                }
+            }
+
+            .card-content {
+                display: grid;
+                padding: 0 10px;
+                text-align: left;
+                align-content: center;
+
+                .card-title {
+                    font-weight: 600;
+                }
+                
+                .card-text {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

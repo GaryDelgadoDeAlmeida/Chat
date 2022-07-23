@@ -4,6 +4,7 @@
 .page-content {
     width: 100%;
     height: 100vh;
+    background-color: var(--c-verySlightCyan);
 
     .wrapper {
         max-width: 1250px;
@@ -14,6 +15,14 @@
     .flex-wrapper {
         width: 100%;
         height: 100%;
+        display: flex;
+    }
+
+    .content-wrapper {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
         display: flex;
     }
 }

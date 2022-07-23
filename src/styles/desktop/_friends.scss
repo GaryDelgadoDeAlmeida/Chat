@@ -1,0 +1,52 @@
+.friend-profile {
+    overflow: auto;
+    width: calc(100% - var(--chatUsersWidth));
+    scrollbar-width: none;          /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;       /* Hide scrollbar for IE and Edge */
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .friend-profile-wrapper {
+        padding: 25px;
+        margin: 0 auto;
+
+        .profile {
+            padding: 25px;
+            margin-bottom: 20px;
+            background-color: var(--c-white);
+
+            .photo {
+                text-align: center;
+
+                img {
+                    height: 150px;
+                }
+            }
+
+            .info {
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+
+        .profile-form {
+            background-color: var(--c-white);
+    
+            .profile-form-header {
+                margin: 0;
+                padding: 10px;
+                font-size: 1rem;
+                border-bottom: 1px solid var(--c-smallMediumDarkShadeCyanBlue);
+    
+                h2 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './dicussions/Header';
-import Messages from './dicussions/Messages';
+import Header from './discussions/Header';
+import Messages from './discussions/Messages';
 import SendMessageForm from "./../forms/SendMessageForm";
 
 export default class Discussion extends React.Component {

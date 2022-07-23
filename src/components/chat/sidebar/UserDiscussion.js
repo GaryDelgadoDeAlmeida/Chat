@@ -12,7 +12,8 @@ export default class UserDisucssion extends React.Component {
                     firstname: "Jacque",
                     lastname: "Johnson",
                     avatar: "/content/img/avatar.png",
-                    lastMessage: "Thanks"
+                    lastMessage: "Thanks",
+                    isCurrent: true
                 },
                 {
                     id: 2,
@@ -48,6 +49,13 @@ export default class UserDisucssion extends React.Component {
                     lastname: "Dunbar",
                     avatar: "/content/img/avatar.png",
                     lastMessage: "..."
+                },
+                {
+                    id: 7,
+                    firstname: "Junior",
+                    lastname: "Almeida",
+                    avatar: "/content/img/avatar.png",
+                    lastMessage: "Coucou"
                 }
             ]
         };
@@ -58,7 +66,7 @@ export default class UserDisucssion extends React.Component {
             <div className={"users-list"}>
                 {this.state.users.map(function(user, i) {
                     return (
-                        <Link className={"user-block"} to={`/chat/${user.id}`} key={user.id}>
+                        <Link className={`user-block ${user.isCurrent === true ? "current-discussion" : ""}`} to={`/chat/${user.id}`} key={user.id}>
                             <div className={"user-img"}>
                                 <img className={"img-rounded"} src={user.avatar} alt={`${user.firstname} ${user.lastname}`} />
                             </div>

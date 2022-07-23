@@ -2,6 +2,16 @@ import React from "react";
 
 export default class Header extends React.Component {
 
+    handleRemove(e) {
+        e.preventDefault()
+        console.log("Hello handleRemove")
+    }
+
+    handleDownloadDiscussion(e) {
+        e.preventDefault()
+        console.log("Hello handleDownloadDiscussion")
+    }
+
     render() {
         return (
             <div className={"discussion-header"}>
@@ -14,8 +24,8 @@ export default class Header extends React.Component {
                     </div>
                 </div>
                 <div className={"discussion-action"}>
-                    <a href="#trash"><img src={"/content/svg/trash.svg"} alt="" /></a>
-                    <a href="#download"><img src={"/content/svg/download.svg"} alt="" /></a>
+                    <a href="#trash" onClick={(e) => this.handleRemove(e)}><img src={"/content/svg/trash.svg"} alt="" /></a>
+                    <a href="#download" onClick={(e) => this.handleDownloadDiscussion(e)}><img src={"/content/svg/download.svg"} alt="" /></a>
                 </div>
             </div>
         )

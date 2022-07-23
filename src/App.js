@@ -24,7 +24,7 @@ export default class App extends React.Component {
                     <Route path="/chat" element={<HomeScreen />} />
                     <Route path="/chat/:id" element={<HomeScreen />} />
                     <Route path="/profile" element={<UserProfileScreen />} />
-                    <Route path="/contact" element={<FriendsScreen />} />
+                    <Route path="/friends" element={<FriendsScreen />} />
                     <Route path="/register" element={<RegisterScreen />} />
                     <Route path="/logout" element={<LoginScreen />} />
                     <Route path="/" element={<LoginScreen />} />
