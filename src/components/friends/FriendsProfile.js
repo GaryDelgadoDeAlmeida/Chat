@@ -12,7 +12,7 @@ export default class FriendsProfile extends React.Component {
                             <img src={"/content/img/avatar.png"} alt={"avatar"} />
                         </div>
                         <div className={"info"}>
-                            <p>Junior ALMEIDA</p>
+                            <p>{this.props.friend.firstname} {this.props.friend.lastname}</p>
                         </div>
                     </div>
 
@@ -21,11 +21,7 @@ export default class FriendsProfile extends React.Component {
                             <h2>About</h2>
                         </div>
                         <div className={"profile-form-content"}>
-                            <FriendForm friend={{
-                                lastname: "ALMEIDA",
-                                firstname: "Junior",
-                                phone: "06 52 07 39 97",
-                            }} />
+                            <FriendForm friend={this.props.friend} />
                         </div>
                     </div>
                 </div>

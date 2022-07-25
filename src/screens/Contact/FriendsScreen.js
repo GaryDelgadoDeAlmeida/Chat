@@ -13,25 +13,33 @@ export default class FriendsScreen extends React.Component {
                     id: 1,
                     photo: "/content/img/avatar.png",
                     firstname: "Garry",
-                    lastname: "ALMEIDA"
+                    lastname: "ALMEIDA",
+                    email: "garry.almeida@gmail.com",
+                    phone: "06 52 07 39 97"
                 },
                 {
                     id: 2,
                     photo: "/content/img/avatar.png",
                     firstname: "Gary",
-                    lastname: "ALMEIDA"
+                    lastname: "ALMEIDA",
+                    email: "gary.almeida@gmail.com",
+                    phone: "06 52 07 39 97"
                 },
                 {
                     id: 3,
                     photo: "/content/img/avatar.png",
                     firstname: "Gary",
-                    lastname: "DELGADO DE ALMEIDA"
+                    lastname: "DELGADO DE ALMEIDA",
+                    email: "garydelgadodealmeida@gmail.com",
+                    phone: "06 52 07 39 97"
                 },
                 {
                     id: 4,
                     photo: "/content/img/avatar.png",
                     firstname: "Junior",
-                    lastname: "ALMEIDA"
+                    lastname: "ALMEIDA",
+                    email: "junior.almeida@gmail.com",
+                    phone: "06 52 07 39 97"
                 }
             ],
             currentFriend: false
@@ -48,15 +56,45 @@ export default class FriendsScreen extends React.Component {
         return els;
     }
 
+    /**
+     * Get a specific parent by the class name
+     * 
+     * @param {*} element 
+     * @param {*} target 
+     * @returns 
+     */
+    findSpecificParent(element, target) {
+        var els = "";
+        
+        while (element) {
+            if( [null, undefined].indexOf(element.className) === -1 ) {
+                if(element.className === target) {
+                    els = element;
+                    break;
+                }
+            }
+
+            element = element.parentNode;
+        }
+
+        return els;
+    }
+
     handleFriendProfile(e) {
         e.preventDefault();
 
-        let parents = this.findAllParents(e.target)
-        let friendProfile = this.state.friends.map(friend => {
-            if(friend.id === e.target.getAttribute("data-friend")) {
-                return friend
-            }
-        })
+        let parent = this.findSpecificParent(e.target, "card")
+        let friendProfile = [];
+
+        if(parent !== "") {
+            this.state.friends.map((friend) => {
+                if(friend.id === parseInt(parent.getAttribute("data-friend"))) {
+                    friendProfile = friend
+                }
+    
+                return true
+            })
+        }
 
         if(friendProfile !== []) {
             this.setState({currentFriend: friendProfile});
@@ -94,7 +132,7 @@ export default class FriendsScreen extends React.Component {
                     
                     {/* Content */}
                     {this.state.currentFriend && (
-                        <FriendProfile />
+                        <FriendProfile friend={this.state.currentFriend} />
                     )}
                 </div>
             </Sidebar>

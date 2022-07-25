@@ -7,6 +7,7 @@ export default class FriendForm extends React.Component {
         this.state = {
             firstname: props.friend.firstname,
             lastname: props.friend.lastname,
+            email: props.friend.email,
             phone: props.friend.phone
         }
     }
@@ -32,6 +33,11 @@ export default class FriendForm extends React.Component {
                 <div className={"form-field"}>
                     <label>Lastname :</label>
                     <input type={"text"} name={"lastname"} maxLength={255} value={this.state.lastname} onChange={(e) => this.handleChange(e)}/>
+                </div>
+                
+                <div className={"form-field"}>
+                    <label>Email :</label>
+                    <input type={"email"} name={"email"} value={this.state.email} onChange={(e) => this.handleChange(e)}/>
                 </div>
                 
                 <div className={"form-field"}>
