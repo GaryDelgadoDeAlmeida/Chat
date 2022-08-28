@@ -42,7 +42,8 @@ export default class FriendsScreen extends React.Component {
                     phone: "06 52 07 39 97"
                 }
             ],
-            currentFriend: false
+            printProfile: false,
+            currentFriend: [],
         }
     }
 
@@ -97,7 +98,10 @@ export default class FriendsScreen extends React.Component {
         }
 
         if(friendProfile !== []) {
-            this.setState({currentFriend: friendProfile});
+            this.setState({
+                printProfile: true, 
+                currentFriend: friendProfile
+            });
         }
     }
 
@@ -131,7 +135,7 @@ export default class FriendsScreen extends React.Component {
                     </div>
                     
                     {/* Content */}
-                    {this.state.currentFriend && (
+                    {this.state.printProfile && this.state.currentFriend !== [] && (
                         <FriendProfile friend={this.state.currentFriend} />
                     )}
                 </div>

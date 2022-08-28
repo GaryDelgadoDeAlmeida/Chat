@@ -26,7 +26,7 @@ export default class ProfileForm extends React.Component {
 
     render() {
         return (
-            <form className={"form"} onSubmit={(e) => this.handleSubmit(e)}>
+            <form id={this.props.id} className={"form"} onSubmit={(e) => this.handleSubmit(e)}>
                 <div className={"form-field"}>
                     <label htmlFor={"firstname"}>Firstname :</label>
                     <input id={"firstname"} type={"text"} name={"firstname"} />

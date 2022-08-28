@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "firstname": "Garry",
+        "lastname": "Almeida",
+        "phone": "06 52 07 39 97",
+        "email": "gary.almeida.work@gmail.com",
+        "address": "",
+        "zipCode": "",
+        "country": ""
+    },
+    {
+        "id": 2,
+        "firstname": "Gary",
+        "lastname": "Delgado de Almeida",
+        "phone": "06 52 07 39 97",
+        "email": "garydelgadealmeida@gmail.com",
+        "address": "",
+        "zipCode": "",
+        "country": ""
+    },
+    {
+        "id": 3,
+        "firstname": "Gary",
+        "lastname": "Almeida",
+        "phone": "06 52 07 39 97",
+        "email": "gary.almeida.sio@gmail.com",
+        "address": "",
+        "zipCode": "",
+        "country": ""
+    },
+    {
+        "id": 4,
+        "firstname": "Junior",
+        "lastname": "Almeida",
+        "phone": "06 52 07 39 97",
+        "email": "junior.almeida@gmail.com",
+        "address": "",
+        "zipCode": "",
+        "country": ""
+    }
+]
