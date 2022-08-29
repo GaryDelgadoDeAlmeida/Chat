@@ -1,4 +1,5 @@
 import React from "react";
+import Notification from "../Notification";
 
 export default class FriendForm extends React.Component {
 
@@ -11,6 +12,8 @@ export default class FriendForm extends React.Component {
             lastname: "",
             email: "",
             phone: "",
+            printResponse: false,
+            response: []
         }
     }
 
@@ -20,7 +23,14 @@ export default class FriendForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault()
-        this.setState({disableFields: true})
+        this.setState({
+            disableFields: true,
+            printResponse: true,
+            response: {
+                class: "success",
+                message: "La mise à jour des données personnelles de votre contact a bien été prise en compte"
+            }
+        })
     }
 
     allowFormEdit(e) {
@@ -30,13 +40,18 @@ export default class FriendForm extends React.Component {
             firstname: this.props.friend.firstname,
             lastname: this.props.friend.lastname,
             email: this.props.friend.email,
-            phone: this.props.friend.phone,
+            phone: this.props.friend.phone
         })
     }
 
     render() {
         return (
             <form className={"form"} onSubmit={(e) => this.handleSubmit(e)}>
+
+                {this.state.printResponse && (
+                    <Notification response={this.state.response} />
+                )}
+
                 <div className={"form-field"}>
                     <label>Firstname :</label>
                     <input type={"text"} name={"firstname"} maxLength={255} value={!this.state.allowEdit ? this.props.friend.firstname : this.state.firstname} onChange={(e) => this.handleChange(e)} disabled={this.state.disableFields} />

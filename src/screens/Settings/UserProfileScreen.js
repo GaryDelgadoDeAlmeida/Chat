@@ -8,7 +8,50 @@ export default class UserProfileScreen extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            photo: "/content/img/avatar.png",
+            firstname: "Garry",
+            lastname: "ALMEIDA",
+            email: "gary.almeida.work@gmail.com",
+            phone: "06 52 07 39 97",
+            address: "189 rue Vercingétorix",
+            city: "Paris",
+            zipCode: "75014",
+            country: "France",
+            socialLinks: [
+                {
+                    url: "https://facebook.com",
+                    title: "<username>",
+                    type: "facebook",
+                    icon: "/content/svg/phone.svg"
+                },
+                {
+                    url: "https://twitter.com",
+                    title: "<username>",
+                    type: "twitter",
+                    icon: "/content/svg/phone.svg"
+                },
+                {
+                    url: "https://instagram.com",
+                    title: "<username>",
+                    type: "instagram",
+                    icon: "/content/svg/phone.svg"
+                },
+                {
+                    url: "https://linkedin.com",
+                    title: "<username>",
+                    type: "linkedin",
+                    icon: "/content/svg/phone.svg"
+                }
+            ],
+            time: new Date(),
+        };
+    }
+
+    componentDidMount() {
+        setInterval(() => {
+            this.setState({ time: new Date() })
+        }, 1000)
     }
 
     render() {
@@ -19,51 +62,59 @@ export default class UserProfileScreen extends React.Component {
                     {/* Sidebar */}
                     <div className={"sidebar-header"}>
                         <div className={"profile-list"}>
+
+                            {/* Profile */}
                             <div className={"profile-card"}>
                                 <div>
-                                    <img src={"/content/img/avatar.png"} alt={""} />
+                                    <img src={this.state.photo} alt={""} />
                                 </div>
                                 
                                 <div>
-                                    <label>Garry Almeida</label>
+                                    <label>{this.state.firstname} {this.state.lastname}</label>
                                 </div>
                                 
                                 <button className={"btn btn-logout"}>Logout</button>
                             </div>
 
+                            {/* Personal Data */}
                             <div className={"profile-card"}>
                                 <div className={"card-group"}>
+
+                                    {/* Local Time */}
                                     <div className={"card-row local-time"}>
                                         <div className={"card-body"}>
                                             <p className={"c-lightSilver"}>Local Time</p>
-                                            <p>19:19</p>
+                                            <p>{this.state.time.toLocaleTimeString()}</p>
                                         </div>
 
                                         <img src={"/content/svg/phone.svg"} alt={""} />
                                     </div>
 
+                                    {/* Mobile Phone */}
                                     <div className={"card-row phone"}>
                                         <div className={"card-body"}>
                                             <p className={"c-lightSilver"}>Phone</p>
-                                            <p>06 52 07 39 97</p>
+                                            <p>{this.state.phone}</p>
                                         </div>
 
                                         <img src={"/content/svg/phone.svg"} alt={""} />
                                     </div>
 
+                                    {/* Email address */}
                                     <div className={"card-row email"}>
                                         <div className={"card-body"}>
                                             <p className={"c-lightSilver"}>Email</p>
-                                            <p>gary.almeida.work@gmail.com</p>
+                                            <p>{this.state.email}</p>
                                         </div>
 
                                         <img src={"/content/svg/phone.svg"} alt={""} />
                                     </div>
 
+                                    {/* Address */}
                                     <div className={"card-row address"}>
                                         <div className={"card-body"}>
                                             <p className={"c-lightSilver"}>Address</p>
-                                            <p>189 rue Vercingétorix, 75014 Paris, France</p>
+                                            <p>{this.state.address}, {this.state.zipCode} {this.state.city}, {this.state.country}</p>
                                         </div>
 
                                         <img src={"/content/svg/phone.svg"} alt={""} />
@@ -71,43 +122,22 @@ export default class UserProfileScreen extends React.Component {
                                 </div>
                             </div>
 
+                            {/* Social Link */}
                             <div className={"profile-card"}>
                                 <div className={"card-group"}>
-                                    <div className={"card-row facebook"}>
-                                        <div className={"card-body"}>
-                                            <p className={"c-lightSilver"}>Facebook</p>
-                                            <a href={"#fb"}>@fb</a>
-                                        </div>
 
-                                        <img src={"/content/svg/phone.svg"} alt={""} />
-                                    </div>
+                                    {this.state.socialLinks.map((item, i) => {
+                                        return (
+                                            <div key={i} className={`card-row ${item.type}`}>
+                                                <div className={"card-body"}>
+                                                    <p className={"c-lightSilver"}>{item.type.toLocaleUpperCase()}</p>
+                                                    <a href={item.url} target={"_blank"} rel={"noreferrer"}>{item.title}</a>
+                                                </div>
 
-                                    <div className={"card-row twitter"}>
-                                        <div className={"card-body"}>
-                                            <p className={"c-lightSilver"}>Twitter</p>
-                                            <a href={"#tw"}>@tw</a>
-                                        </div>
-
-                                        <img src={"/content/svg/phone.svg"} alt={""} />
-                                    </div>
-
-                                    <div className={"card-row instagram"}>
-                                        <div className={"card-body"}>
-                                            <p className={"c-lightSilver"}>Instagram</p>
-                                            <a href={"#inst"}>@inst</a>
-                                        </div>
-
-                                        <img src={"/content/svg/phone.svg"} alt={""} />
-                                    </div>
-
-                                    <div className={"card-row linkedin"}>
-                                        <div className={"card-body"}>
-                                            <p className={"c-lightSilver"}>Linkedin</p>
-                                            <a href={"#in"}>@in</a>
-                                        </div>
-
-                                        <img src={"/content/svg/phone.svg"} alt={""} />
-                                    </div>
+                                                <img src={item.icon} alt={""} />
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         </div>

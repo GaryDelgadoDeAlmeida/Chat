@@ -1,0 +1,96 @@
+/* ---------------------------------------- *\
+                    Width
+\* ---------------------------------------- */
+.w-100px {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.w-150px {
+    width: 150px !important;
+    margin-bottom: 10px;
+}
+
+.w-250px {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.w-350px {
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+
+/* ---------------------------------------- *\
+                    Height
+\* ---------------------------------------- */
+.h-50px {
+    height: 50px;
+}
+
+.h-150px {
+    height: 150px !important;
+}
+
+.h-250px {
+    height: 250px !important;
+}
+
+
+/* ---------------------------------------- *\
+                    Texte
+\* ---------------------------------------- */
+.txt-bold {
+    font-weight: 600;
+}
+
+.txt-size-middle {
+    font-size: 1.3rem !important;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-small {
+    font-size: 14px;
+    color: var(--c-lightSilver);
+}
+
+
+/* ---------------------------------------- *\
+                    Margin
+\* ---------------------------------------- */
+.mb-10px {
+    margin-bottom: 10px;
+}
+
+.ml-10px {
+    margin-left: 10px;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.m-middle {
+    display: block;
+    margin: auto;
+}
+
+
+/* ---------------------------------------- *\
+                    Padding
+\* ---------------------------------------- */
+.pt-3_5rem {
+    padding-top: 3.5rem;
+}
+
+
+/* ---------------------------------------- *\
+                Border Radius
+\* ---------------------------------------- */
+.r-20px {
+    border-radius: 20px !important;
+}

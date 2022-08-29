@@ -7,6 +7,7 @@
         "email": "gary.almeida.work@gmail.com",
         "address": "",
         "zipCode": "",
+        "city": "",
         "country": ""
     },
     {
@@ -17,6 +18,7 @@
         "email": "garydelgadealmeida@gmail.com",
         "address": "",
         "zipCode": "",
+        "city": "",
         "country": ""
     },
     {
@@ -27,6 +29,7 @@
         "email": "gary.almeida.sio@gmail.com",
         "address": "",
         "zipCode": "",
+        "city": "",
         "country": ""
     },
     {
@@ -37,6 +40,7 @@
         "email": "junior.almeida@gmail.com",
         "address": "",
         "zipCode": "",
+        "city": "",
         "country": ""
     }
 ]

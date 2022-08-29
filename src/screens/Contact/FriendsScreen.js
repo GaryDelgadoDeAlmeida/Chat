@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "./../../components/Sidebar";
+import { findSpecificParent } from "../../functions/functions";
 import FriendProfile from "./../../components/friends/FriendsProfile";
 
 export default class FriendsScreen extends React.Component {
@@ -47,44 +48,10 @@ export default class FriendsScreen extends React.Component {
         }
     }
 
-    findAllParents(element) {
-        var els = [];
-        while (element) {
-            els.unshift(element);
-            element = element.parentNode;
-        }
-
-        return els;
-    }
-
-    /**
-     * Get a specific parent by the class name
-     * 
-     * @param {*} element 
-     * @param {*} target 
-     * @returns 
-     */
-    findSpecificParent(element, target) {
-        var els = "";
-        
-        while (element) {
-            if( [null, undefined].indexOf(element.className) === -1 ) {
-                if(element.className === target) {
-                    els = element;
-                    break;
-                }
-            }
-
-            element = element.parentNode;
-        }
-
-        return els;
-    }
-
     handleFriendProfile(e) {
         e.preventDefault();
 
-        let parent = this.findSpecificParent(e.target, "card")
+        let parent = findSpecificParent(e.target, "card")
         let friendProfile = [];
 
         if(parent !== "") {
