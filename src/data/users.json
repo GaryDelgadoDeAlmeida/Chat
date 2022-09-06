@@ -8,7 +8,36 @@
         "address": "",
         "zipCode": "",
         "city": "",
-        "country": ""
+        "country": "",
+        "socialLinks": [
+            {
+                "url": "",
+                "title": "",
+                "type": "",
+                "icon" : ""
+            },
+            {
+                "url": "",
+                "title": "",
+                "type": "",
+                "icon" : ""
+            }
+        ],
+        "friends": [
+            {
+                "id": 1,
+                "firstname": "",
+                "lastname": "",
+                "email": "",
+                "phone": ""
+            }
+        ],
+        "discussions": [
+            {
+                "friendId": 1,
+                "lastMessage": ""
+            }
+        ]
     },
     {
         "id": 2,
@@ -19,7 +48,22 @@
         "address": "",
         "zipCode": "",
         "city": "",
-        "country": ""
+        "country": "",
+        "socialLinks": [
+            {
+                "url": "",
+                "title": "",
+                "type": "",
+                "icon" : ""
+            },
+            {
+                "url": "",
+                "title": "",
+                "type": "",
+                "icon" : ""
+            }
+        ],
+        "friends": []
     },
     {
         "id": 3,
@@ -30,7 +74,22 @@
         "address": "",
         "zipCode": "",
         "city": "",
-        "country": ""
+        "country": "",
+        "socialLinks": [
+            {
+                "url": "",
+                "title": "",
+                "type": "",
+                "icon" : ""
+            },
+            {
+                "url": "",
+                "title": "",
+                "type": "",
+                "icon" : ""
+            }
+        ],
+        "friends": []
     },
     {
         "id": 4,
@@ -41,6 +100,21 @@
         "address": "",
         "zipCode": "",
         "city": "",
-        "country": ""
+        "country": "",
+        "socialLinks": [
+            {
+                "url": "",
+                "title": "",
+                "type": "",
+                "icon" : ""
+            },
+            {
+                "url": "",
+                "title": "",
+                "type": "",
+                "icon" : ""
+            }
+        ],
+        "friends": []
     }
 ]
