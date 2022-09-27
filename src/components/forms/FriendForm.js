@@ -40,7 +40,9 @@ export default class FriendForm extends React.Component {
             firstname: this.props.friend.firstname,
             lastname: this.props.friend.lastname,
             email: this.props.friend.email,
-            phone: this.props.friend.phone
+            phone: this.props.friend.phone,
+            printResponse: false,
+            response: []
         })
     }
 
@@ -80,7 +82,7 @@ export default class FriendForm extends React.Component {
                     
                     {/* Allow edit button */}
                     {this.state.disableFields && (
-                        <button onClick={(e) => this.allowFormEdit(e)}>Edit</button>
+                        <button className={"btn btn-danger"} onClick={(e) => this.allowFormEdit(e)}>Edit</button>
                     )}
                 </div>
             </form>

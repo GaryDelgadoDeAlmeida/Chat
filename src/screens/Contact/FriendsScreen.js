@@ -51,7 +51,7 @@ export default class FriendsScreen extends React.Component {
     handleFriendProfile(e) {
         e.preventDefault();
 
-        let parent = findSpecificParent(e.target, "card")
+        let parent = findSpecificParent(e.target, "card", true)
         let friendProfile = [];
 
         if(parent !== "") {

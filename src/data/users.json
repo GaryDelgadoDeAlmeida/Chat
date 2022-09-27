@@ -25,24 +25,61 @@
         ],
         "friends": [
             {
-                "id": 1,
-                "firstname": "",
-                "lastname": "",
-                "email": "",
-                "phone": ""
+                "id": 2,
+                "firstname": "Gary",
+                "lastname": "Delgado de Almeida",
+                "email": "garydelgadealmeida@gmail.com",
+                "phone": "06 52 07 39 97"
             }
         ],
         "discussions": [
             {
                 "friendId": 1,
-                "lastMessage": ""
+                "lastMessage": "Hello"
+            },
+            {
+                "friendId": 2,
+                "lastMessage": "Hi"
+            },
+            {
+                "friendId": 1,
+                "lastMessage": "How are you ?"
+            },
+            {
+                "friendId": 2,
+                "lastMessage": "Fine ?"
+            },
+            {
+                "friendId": 1,
+                "lastMessage": "Something happened ?"
+            },
+            {
+                "friendId": 2,
+                "lastMessage": "I'm currently researching the name of a bird species for a half-hours and I'm tired of searching !"
+            },
+            {
+                "friendId": 1,
+                "lastMessage": "I understand your feeling. Can you send me the picture of that bird ? I can help you."
+            },
+            {
+                "friendId": 2,
+                "lastMessage": "Yeah, i'll send you in a minute"
+            },
+            {
+                "friendId": 2,
+                "lastMessage": "Thanks"
+            },
+            {
+                "friendId": 2,
+                "lastMessage": "",
+                "media": "/content/discussions/user_1_user_2/avatar.png"
             }
         ]
     },
     {
         "id": 2,
         "firstname": "Gary",
-        "lastname": "Delgado de Almeida",
+        "lastname": "Almeida",
         "phone": "06 52 07 39 97",
         "email": "garydelgadealmeida@gmail.com",
         "address": "",
@@ -63,7 +100,15 @@
                 "icon" : ""
             }
         ],
-        "friends": []
+        "friends": [
+            {
+                "id": 1,
+                "firstname": "Gary",
+                "lastname": "Almeida",
+                "email": "gary.almeida.work@gmail.com",
+                "phone": "06 52 07 39 97"
+            }
+        ]
     },
     {
         "id": 3,

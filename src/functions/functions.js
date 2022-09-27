@@ -19,17 +19,25 @@ export const findAllParents = (element) => {
  * Get a specific parent by the class name
  * 
  * @param {*} element 
- * @param {*} target 
+ * @param {*} target
+ * @param {boolean} strict 
  * @returns 
  */
-export const findSpecificParent = (element, target) => {
+export const findSpecificParent = (element, target, strict = false) => {
     var els = "";
     
     while (element) {
         if( [null, undefined].indexOf(element.className) === -1 ) {
-            if(element.className === target) {
-                els = element;
-                break;
+            if(strict === true) {
+                if(element.className === target) {
+                    els = element;
+                    break;
+                }
+            } else {
+                if(element.className.includes(target)) { 
+                    els = element;
+                    break;
+                }
             }
         }
 

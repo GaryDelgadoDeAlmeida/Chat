@@ -16,6 +16,17 @@
             background-color: var(--c-red);
         }
     }
+
+    &.btn-danger {
+        color: var(--c-white);
+        border: 1px solid var(--c-darkRed);
+        background-color: var(--c-darkRed);
+    
+        &:hover {
+            color: var(--c-darkRed);
+            background-color: transparent;
+        }
+    }
     
     &.btn-custom-green {
         height: 34px;
